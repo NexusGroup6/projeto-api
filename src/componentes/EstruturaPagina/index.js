@@ -7,7 +7,7 @@ const EstruturaPagina = (props) => {
     return (
         <section>
             <Header />
-              {props.children}
+            {props.children}
             <Footer />
         </section>
     );
