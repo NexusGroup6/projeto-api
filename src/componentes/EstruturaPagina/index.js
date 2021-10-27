@@ -1,14 +1,16 @@
 import React from "react";
- 
+
 import Header from '../Header';
- 
-const EstruturaPagina = ( props ) => {
-    return(
+import Footer from '../Footer';
+
+const EstruturaPagina = (props) => {
+    return (
         <section>
             <Header />
-                {props.children}
+              {props.children}
+            <Footer />
         </section>
     );
 };
- 
+
 export default EstruturaPagina;
