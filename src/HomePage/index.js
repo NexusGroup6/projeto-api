@@ -1,9 +1,12 @@
 import React from 'react';
+import api from '../Services/api';
+
 import './estilo_homepage.css';
 
 import EstruturaPagina from '../componentes/EstruturaPagina';
 
 const HomePage = () => {
+
     return (
         <EstruturaPagina>
             <h1 id="teste-h1">Teste Page 1</h1>

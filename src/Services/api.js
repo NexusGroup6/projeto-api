@@ -1,7 +1,23 @@
-import axios from "axios";
+const fetchForza = () => {
+    const getForzaUrl = id => "https://docs.forza-api.tk/img/${id}"
 
-const api = axios.create({
-  baseURL: "https://docs.forza-api.tk",
-});
+    const forzaPromises = []
 
-export default api;
+    for (let i = 1; i <= 17; i++) {
+        forzaPromises.push(fetch(getForzaUrl(i)).then(response => response.json()))
+    }
+
+    Promise.all(forzaPromises)
+        .then(forzas => {
+            console.log(forzas)
+
+            const lisForzas = forzas.reduce((accumulator, forza) => {
+                accumulator += '<li>${forza.name}</li>'
+                return accumulator
+            }, '')
+
+            //console.log(lisForzas)
+        })
+}
+
+export default fetchForza;
