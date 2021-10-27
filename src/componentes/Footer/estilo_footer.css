@@ -1,21 +1,23 @@
 footer {/*Footer em si*/
-    background-image: linear-gradient(90deg,  #000428, #004e92 );/*Fundo*/
+    background-color: #1b3675;/*Fundo*/
     color:white;/*Cor fonte*/
-    font-size: 20px;/*Tamanho fonte*/
+    font-size: 17px;/*Tamanho fonte*/
     font-family: 'Courier New', Courier, monospace;/*Fonte*/
     text-align: center;/*Alinhamento ao centro*/
     list-style-type: none;/*Decoração nula*/
     padding-top: 20px;/*Padding acima*/
 }
+
 #membros {/*Id membros*/
-    font-size: 20px;/*Tamanho fonte*/
+    font-size: 17px;/*Tamanho fonte*/
     font-family: 'Courier New', Courier, monospace;/*Fonte*/
     padding: 5px;/*Distância*/
 }
+
 .footerend {/*Footer final*/
     text-align: center;/*Alinhamento ao centro*/
     color: white;/*Cor fonte*/
     padding: 20px;/*Tamanho distância*/
-    font-size: 25px;/*Tamanho fonte*/
+    font-size: 17px;/*Tamanho fonte*/
     font-family: 'Courier New', Courier, monospace;/*Tamanho fonte*/
 }
