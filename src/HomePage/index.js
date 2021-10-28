@@ -15,12 +15,13 @@ export default function HomePage() {
       }, []);
 
     return (
+        <EstruturaPagina>
         <div className='Homepage'>
-            <p>Usuário: {user?.image}</p>
+            <img src={user?.image}></img>
         </div>
+        </EstruturaPagina>
     )
 }
-
 
 
 //export default HomePage;
