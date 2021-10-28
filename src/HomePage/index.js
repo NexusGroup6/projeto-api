@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import api from '../Services/api';
-
 import './estilo_homepage.css';
-
 import EstruturaPagina from '../componentes/EstruturaPagina';
 
-const HomePage = () => {
+export default function HomePage() {
+    const [user, setUser] = useState();
+    useEffect(() => {
+        api
+          .get('https://forza-api.tk/')
+          .then((response) => setUser(response.data))
+          .catch((err) => {
+            console.error("ops! ocorreu um erro" + err);
+          });
+      }, []);
 
     return (
-        <EstruturaPagina>
-            <h1 id="teste-h1">Teste Page 1</h1>
-            <h1>Teste Page 2</h1>
-            <h1>Teste Page 3</h1>
-            <h1>Teste Page 4</h1>
-            <h1>Teste Page 5</h1>
-            <h1>Teste Page 6</h1>
-            <h1>Teste Page 7</h1>
-            <h1>Teste Page 8</h1>
-        </EstruturaPagina>
-    );
+        <div className='Homepage'>
+            <p>Usuário: {user?.image}</p>
+        </div>
+    )
 }
 
-export default HomePage;
+
+
+//export default HomePage;
