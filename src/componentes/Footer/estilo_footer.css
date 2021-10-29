@@ -1,11 +1,11 @@
 footer {/*Footer em si*/
-    background-color: #1b3675;/*Fundo*/
+    background-color: #0d6efd;/*Fundo*/
     color:white;/*Cor fonte*/
     font-size: 17px;/*Tamanho fonte*/
     font-family: 'Courier New', Courier, monospace;/*Fonte*/
     text-align: center;/*Alinhamento ao centro*/
     list-style-type: none;/*Decoração nula*/
-    padding-top: 20px;/*Padding acima*/
+    padding-top: 10px;/*Padding acima*/
 }
 
 #membros {/*Id membros*/
